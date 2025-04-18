@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SynTraverse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#001715] text-white font-sans">
+
+  <!-- Promo Label -->
+<div class="w-full bg-[#FDE68A] text-[#1F2937] text-sm font-semibold text-center py-2 px-4">
+  🎉 30% OFF on Pre-Enrollments + Bonus Pre-Classes 
+</div>
+
+<!-- Header -->
+<header class="flex items-center justify-between px-6 lg:px-16 py-6 bg-transparent">
+  <div class="flex items-center space-x-2">
+   <a href="/"> <span class="text-2xl font-bold text-white">SynTraverse</span></a>
+  </div>
+  <nav class="hidden md:flex space-x-8 text-white font-medium">
+    <!-- Optional: Add links here if needed -->
+  </nav>
+  <!-- <a href="#apply"
+    class="inline-block bg-[#7CC3C0] text-[#001715] font-semibold px-6 py-3 rounded-full transition-all duration-300 hover:bg-[#65aead] hover:text-white hover:shadow-lg">
+    Get Started <span class="ml-2">➔</span>
+  </a> -->
+</header>
+
+<!-- Hero Header Section -->
+<section class="relative text-center px-6 lg:px-16 py-20" style="background-image: url('/Images/image-2.png'); background-size: cover; background-position: center;">
+  <div class="absolute inset-0 bg-black opacity-60"></div>
+  <div class="relative z-10">
+    <h1 class="text-4xl md:text-5xl font-bold text-[#7CC3C0] leading-snug mb-4">
+      Enroll in Season 1: Learn Web Skills & Freelancing in 60 Days
+    </h1>
+    <p class="text-lg max-w-xl mx-auto text-white">
+      No experience needed. Learn HTML, CSS, Communication & Profile Setup from scratch.
+    </p>
+  </div>
+</section>
+  
+  <!-- Enrollment Form Section -->
+<section id="apply" class="bg-[#07211E] px-6 lg:px-16 py-16">
+    <form class="max-w-3xl mx-auto grid grid-cols-1 gap-6" action="https://formspree.io/f/xblgvdwk" method="POST">
+  
+      <!-- Personal Info -->
+      <h2 class="text-2xl font-bold text-[#7CC3C0]">👤 Personal Information</h2>
+      <input type="text" name="fullName" placeholder="Full Name" required class="p-3 rounded bg-[#001715] border border-gray-600" />
+      <input type="email" name="email" placeholder="Email Address" required class="p-3 rounded bg-[#001715] border border-gray-600" />
+      <input type="text" name="phone" placeholder="Phone / WhatsApp Number" required class="p-3 rounded bg-[#001715] border border-gray-600" />
+      <input type="number" name="age" placeholder="Age (Optional)" class="p-3 rounded bg-[#001715] border border-gray-600" />
+  
+      <!-- Education & Skill Background -->
+      <h2 class="text-2xl font-bold text-[#7CC3C0]">🧠 Education & Skills</h2>
+      <select name="qualification" required class="p-3 rounded bg-[#001715] border border-gray-600">
+        <option disabled selected>Highest Qualification</option>
+        <option>Matric</option>
+        <option>Intermediate</option>
+        <option>Bachelor</option>
+        <option>Master</option>
+      </select>
+  
+      <label>Have you learned coding before?</label>
+      <div class="flex gap-4">
+        <label><input type="radio" name="learnedCoding" value="Yes" required /> Yes</label>
+        <label><input type="radio" name="learnedCoding" value="No" /> No</label>
+      </div>
+  
+      <label>Do you have freelance experience?</label>
+      <div class="flex gap-4">
+        <label><input type="radio" name="freelanceExp" value="Yes" required /> Yes</label>
+        <label><input type="radio" name="freelanceExp" value="No" /> No</label>
+        <label><input type="radio" name="freelanceExp" value="Beginner" /> Beginner</label>
+      </div>
+  
+      <input type="text" name="freelancePlatforms" placeholder="If yes, which platforms? (Optional)" class="p-3 rounded bg-[#001715] border border-gray-600" />
+  
+      <!-- Intent & Access -->
+      <h2 class="text-2xl font-bold text-[#7CC3C0]">💻 Intent & Learning Access</h2>
+      <textarea name="intent" placeholder="Why do you want to join SynTraverse?" rows="3" class="p-3 rounded bg-[#001715] border border-gray-600"></textarea>
+  
+      <label>Preferred Mode:</label>
+      <div class="flex gap-4">
+        <label><input type="radio" name="mode" value="Online" required /> Online (Virtual Classes)</label>
+        <label><input type="radio" name="mode" value="Offline" /> Offline (Physical Campus-Based Classes)</label>
+      </div>
+      
+  
+      <label>Do you have a working laptop or PC?</label>
+      <div class="flex gap-4">
+        <label><input type="radio" name="laptop" value="Yes" required /> Yes</label>
+        <label><input type="radio" name="laptop" value="No" /> No</label>
+      </div>
+  
+      <label><input type="checkbox" name="needLaptopHelp" value="Yes" /> I don’t have a laptop but want to explore solutions</label>
+  
+      <!-- Plan Selection -->
+      <h2 class="text-2xl font-bold text-[#7CC3C0]">💳 Select Your Enrollment Plan</h2>
+      <select name="plan" required class="p-3 rounded bg-[#001715] border border-gray-600">
+        <option disabled selected>Choose a Plan</option>
+        <option>Online Only – Rs. 4,000</option>
+        <option>Hybrid Campus – Rs. 8,000</option>
+        <option>All-Access Lifetime – Rs. 20,000</option>
+      </select>
+  
+      <input type="text" name="promoCode" placeholder="Have a promo code? (Optional)" class="p-3 rounded bg-[#001715] border border-gray-600" />
+  
+      <!-- Hidden Fields -->
+      <input type="hidden" name="_redirect" value="https://yourdomain.com/thank-you.html" />
+      <input type="text" name="_gotcha" style="display:none" />
+  
+      <!-- Submit Button -->
+      <button type="submit" class="mt-6 bg-[#7CC3C0] text-[#001715] font-bold px-6 py-3 rounded-full hover:bg-[#65aead] hover:text-white transition-all duration-300">
+        ✅ Complete Enrollment
+      </button>
+  
+      <!-- Note after submission -->
+      <p class="text-sm text-gray-400 text-center mt-4">
+        📩 Our team will review your application and get back to you within 48 hours to proceed with the next steps of your enrollment.
+      </p>
+    </form>
+  </section>
+  
+  
+  <!-- Footer Section -->
+  <footer class="bg-[#001715] text-white px-6 lg:px-16 pt-16 pb-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10">
+  
+      <!-- Logo & About -->
+      <div>
+        <div class="flex items-center mb-4 space-x-2">
+          <!-- <img src="PATH_TO_LOGO" alt="SynTraverse Logo" class="h-8" /> -->
+          <span class="text-2xl font-bold text-white">SynTraverse</span>
+        </div>
+        <p class="text-sm text-gray-300 leading-relaxed mb-4">
+          SynTraverse is a next-generation skills academy founded to make Pakistan’s youth job-free. We don’t just teach—we help students build, sell, and scale in the digital world through real-world projects and mentorship.
+        </p>
+        <!-- Optional Socials -->
+        <!--
+        <div class="flex space-x-4 text-xl">
+          <a href="#"><img src="ICON_LINKEDIN" alt="LinkedIn" class="h-5 w-5" /></a>
+          <a href="#"><img src="ICON_TWITTER" alt="Twitter" class="h-5 w-5" /></a>
+          <a href="#"><img src="ICON_INSTAGRAM" alt="Instagram" class="h-5 w-5" /></a>
+          <a href="#"><img src="ICON_FACEBOOK" alt="Facebook" class="h-5 w-5" /></a>
+        </div>
+        -->
+      </div>
+  
+      <!-- Contact -->
+      <div>
+        <h4 class="font-bold text-lg mb-4">Contact</h4>
+        <p class="text-sm text-gray-300 mb-2">
+          <strong>Email</strong><br />
+          <a href="mailto:zaidduartee@gmail.com" class="hover:text-[#7CC3C0]">zaidduartee@gmail.com</a>
+        </p>
+        <p class="text-sm text-gray-300 mb-2">
+          <strong>Phone</strong><br />
+          <a href="tel:+447746522951" class="hover:text-[#7CC3C0]">+44 7746 522951</a>
+        </p>
+        <p class="text-sm text-gray-300">
+          <strong>Address</strong><br />
+          Remote (Varies upon current campus)
+        </p>
+      </div>
+  
+      <!-- Quicklinks (Optional) -->
+      <!--
+      <div>
+        <h4 class="font-bold text-lg mb-4">Quicklinks</h4>
+        <ul class="space-y-2 text-sm text-gray-300">
+          <li><a href="#" class="hover:text-[#7CC3C0]">Home</a></li>
+          <li><a href="#" class="hover:text-[#7CC3C0]">About Us</a></li>
+          <li><a href="#" class="hover:text-[#7CC3C0]">Courses</a></li>
+          <li><a href="#" class="hover:text-[#7CC3C0]">Contact</a></li>
+        </ul>
+      </div>
+      -->
+  
+    </div>
+  
+    <!-- Bottom -->
+    <div class="border-t border-gray-700 mt-12 pt-6 text-center text-sm text-gray-400">
+      © 2025 SynTraverse. All rights reserved.
+    </div>
+  </footer>
+  
+    
+    
+    
+  
+  </body>
+  </html>
+  

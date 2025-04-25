@@ -25,17 +25,30 @@
   <div class="flex items-center space-x-3">
     <a href="/" class="flex items-center space-x-2">
       <img src="/Images/logo.png" alt="SynTraverse Logo" class="h-20 w-auto rounded-lg shadow-md">
-      <!-- <span class="text-2xl font-bold text-white tracking-wide">SynTraverse</span> -->
     </a>
   </div>
+
+  <!-- Navigation Menu -->
   <nav class="hidden md:flex space-x-8 text-white font-medium">
-    <!-- Optional: Add links here if needed -->
+    <a href="/our-process.html" 
+      class="relative group text-lg font-semibold">
+      Our Process
+      <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-[#7CC3C0] transition-all duration-300 group-hover:w-full"></span>
+    </a>
+    <a href="/ceo.html" 
+    class="relative group text-lg font-semibold">
+    About CEO
+    <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-[#7CC3C0] transition-all duration-300 group-hover:w-full"></span>
+  </a>
   </nav>
+
+  <!-- Get Started Button -->
   <a href="/enrollment.html"
     class="inline-block bg-[#7CC3C0] text-[#001715] font-semibold px-6 py-3 rounded-full transition-all duration-300 hover:bg-[#65aead] hover:text-white hover:shadow-lg">
     Get Started <span class="ml-2">➔</span>
   </a>
 </header>
+
 
 
 <!-- Hero Section -->
@@ -202,17 +215,33 @@
 
 
 
-  <!-- Right Text -->
-  <div class="w-full lg:w-1/2">
-    <h2 class="text-3xl md:text-4xl font-bold text-[#7CC3C0] mb-4">My Mission & Philosophy</h2>
-    <p class="italic text-white mb-4">
-      “Pakistan's youth doesn't need more degrees — they need direction, digital skills, and the confidence to earn with their minds.”
-    </p>
-    <p class="text-white text-sm md:text-base mb-6 leading-relaxed">
-      SynTraverse is my personal mission to fix what the system failed to do — to give students and job-seekers not just knowledge, but power. Real, monetizable, global power. We teach the skills, mindset, and earning strategies that actually work in the digital economy. I believe every learner in Pakistan can become a confident freelancer, entrepreneur, or creator — if they're shown the right roadmap.
-    </p>
-    <p class="text-white font-signature italic">Zaid Duarte<br/><span class="text-sm text-[#7CC3C0]">Founder & CEO, SynTraverse Academy</span></p>
+<!-- Right Text -->
+<div class="w-full lg:w-1/2 flex flex-col gap-6">
+  <h2 class="text-3xl md:text-4xl font-bold text-[#7CC3C0]" data-aos="fade-right">My Mission & Philosophy</h2>
+  
+  <p class="italic text-white" data-aos="fade-up">
+    “Pakistan's youth doesn't need more degrees — they need direction, digital skills, and the confidence to earn with their minds.”
+  </p>
+  
+  <p class="text-white text-sm md:text-base leading-relaxed" data-aos="fade-up">
+    SynTraverse is my personal mission to fix what the system failed to do — to give students and job-seekers not just knowledge, but power. Real, monetizable, global power. We teach the skills, mindset, and earning strategies that actually work in the digital economy. I believe every learner in Pakistan can become a confident freelancer, entrepreneur, or creator — if they're shown the right roadmap.
+  </p>
+  
+  <p class="text-white font-signature italic" data-aos="fade-up">
+    Zaid Duarte<br/>
+    <span class="text-sm text-[#7CC3C0]">Founder & CEO, SynTraverse Academy</span>
+  </p>
+
+  <!-- Button (Shifted nicely to right if needed in flex) -->
+  <div class="mt-4 flex justify-start lg:justify-end" data-aos="fade-up">
+    <a href="/ceo.html" 
+      class="inline-block bg-[#7CC3C0] text-[#001715] font-semibold px-6 py-3 rounded-full transition-all duration-300 hover:bg-[#65aead] hover:text-white hover:shadow-lg">
+      About CEO ➔
+    </a>
   </div>
+
+</div>
+
 </section>
 
 
